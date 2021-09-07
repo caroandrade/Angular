@@ -1,6 +1,6 @@
 # Angular
 Primer desarrollo en Angular - 
-					El desarrollo son aplicaciones simples para trabajar con alumnos de escuela primaria (10/11 años), sobre verbos, sustantivos y adjetivos. 
+					El desarrollo son aplicaciones simples para trabajar con alumnos de escuela primaria (9/10 años), sobre verbos, sustantivos y adjetivos. 
 					Realizadas en Angular.
 
 					Versión de Angular
