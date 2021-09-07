@@ -1,0 +1,55 @@
+<h1>Práctica de Angular</h1>
+<div class="detalle">
+  <p>Angular: configuración de rutas </p>
+</div>
+
+
+   <div class="barra">  
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          
+          <a  routerLinkActive="active" routerLink="/home">Verbos - Sustantivos - Adjetivos</a>
+        </mat-toolbar-row>
+
+        <mat-toolbar-row>
+          <span>Verbos</span>
+          <span class="example-spacer"></span>
+          <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">filter_vintage</mat-icon>
+              <nav>
+                <div>
+                  <ul>
+                    <li >
+                      <a routerLinkActive="active" routerLink="/Verbo-Presentacion">Conjugación</a>
+                    </li>
+                    <li class>
+                      <a routerLinkActive="active" routerLink="/Verbo-Ejercicio">Gerundio</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </mat-toolbar-row>
+
+        <mat-toolbar-row>
+          <span>Sustantivos</span>
+          <span class="example-spacer"></span>
+          <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+          <nav>
+            <div>
+              <ul>
+                <li >
+                  <a routerLinkActive="active" routerLink="/Sust-Presentacion">Presentacion</a>
+                </li>
+                <li >
+                  <a routerLinkActive="active" routerLink="/Sust-Ejercicio">Ejercicio</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </mat-toolbar-row>
+      </mat-toolbar>
+
+    </div> 
+ 
+  <div >
+    <router-outlet></router-outlet>
+  </div>

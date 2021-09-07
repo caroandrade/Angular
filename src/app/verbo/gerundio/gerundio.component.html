@@ -1,0 +1,51 @@
+<div class="detalle">
+  <p>Angular: radio button, grid</p>
+</div>
+
+<div class="imagen">
+        <img @entrada src="./assets/imagenes/gerundio-expl.png">
+</div>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+  
+  <mat-grid-tile>
+    <div class="contenedor">
+      <h2>Gerundio </h2>
+      <label id="example-radio-group-label">Selecciona el Gerundio  de <strong>LEER</strong></label>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group"
+        [(ngModel)]="respuesta">
+        <mat-radio-button class="example-radio-button" *ngFor="let uno of gerundio" [value]="uno" (click)="comprobar()" title="Hacer doble click para evaluar opción">
+          {{uno}} 
+        </mat-radio-button>
+      </mat-radio-group>
+      <div><h1>Tu respuesta es: <strong>{{respuesta}}</strong> </h1></div>
+
+      <h3>{{mensaje}}</h3>
+</div> 
+  </mat-grid-tile>
+  <mat-grid-tile>
+
+    <div class="contenedor">
+
+      <label id="example-radio-group-label">Selecciona el Gerundio  de <strong>ESTUDIAR</strong></label>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group"
+        [(ngModel)]="respuesta2">
+        <mat-radio-button class="example-radio-button" *ngFor="let uno2 of gerundio2" [value]="uno2" (click)="comprobar2()" title="Hacer doble click para evaluar opción">
+          {{uno2}} 
+        </mat-radio-button>
+      </mat-radio-group>
+      <div><h1>Tu respuesta es: <strong>{{respuesta2}}</strong> </h1></div>
+
+      <h3>{{mensaje2}}</h3>
+
+</div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+
+
+
