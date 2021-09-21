@@ -9,7 +9,7 @@ import { GerundioComponent } from './verbo/gerundio/gerundio.component';
 //sustantivo
 import { SustHomeComponent } from './sustantivo/sust-home/sust-home.component';
 import { EjercicioComponent } from './sustantivo/ejercicio/ejercicio.component';
-
+import { SustEjemploComponent} from './sustantivo/sust-ejemplo/sust-ejemplo.component';
 
 
 
@@ -17,10 +17,11 @@ const routes: Routes = [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component:HomeComponent},
       { path: "Verbo-Presentacion", component: PresentacionComponent},
-      {path: "Verbo-Ejercicio", component: GerundioComponent},
-      {path: "Sust-Presentacion", component: SustHomeComponent},
-      {path: "Sust-Ejercicio", component: EjercicioComponent},
-      {path: '**', component:HomeComponent}
+      { path: "Verbo-Ejercicio", component: GerundioComponent},
+      { path: "Sust-Presentacion", component: SustHomeComponent},
+      { path: "Sust-Ejercicio", component: EjercicioComponent},
+      { path: "Sust-Ejemplo" , component: SustEjemploComponent},
+      { path: '**', component:HomeComponent}
  
 
 ];

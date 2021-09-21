@@ -4,54 +4,18 @@
     El sustantivo es la palabra que usamos para nombrar a los objetos, a las personas, a los países, etc. Igual que los artículos, tienen género (femenino o masculino), y número (singular o plural). Estas características deben coincidir siempre con las del artículo.</p>
 
     <hr>
-    <div class="detalle"><span>Angular: - botonoes con iconos</span></div>
+    <div class="detalle"><span>Angular: - botonoes con iconos - Animación </span></div>
 <h1>Los sustantivos pueden clasificarse en:</h1>
-<div class="contenedor">
-            <ul>
-                <li>Sustantivos Masculinos y Femeninos.
-                    <button mat-raised-button color="primary">
-                        <mat-icon>event_note</mat-icon>
-                        
-                    </button>
-                </li>
-                <li>Sustantivos Singulares y Plurales.</li>
-                <li>Sustantivos Propios y Comunes.</li>
-                <li>Sustantivos Abstractos y Concretos </li>
-                <li>Sustantivos Individuales y Colectivos </li>
-                <li>Sustantivos Contables e Incontables</li>
-                <li>Sustantivos Primitivos y Derivados</li>
-                <li>Sustantivos Compuestos</li>
 
-            </ul>
-
-</div>
-<h3>Ejemplos de sustantivos</h3>
-<div class="grilla">
-    <mat-grid-list cols="2" rowHeight="2:1">
-        <mat-grid-tile>
-            <button >Género de los sustantivos </button>
-                <ul><li *ngFor="let uno of ejemplo" > 
-
-                   {{uno}} 
-                
-                </ul>
-              
-        </mat-grid-tile>
-        <mat-grid-tile >
-            <p>2</p> 
-        </mat-grid-tile>
-        <mat-grid-tile>3</mat-grid-tile>
-        <mat-grid-tile>4</mat-grid-tile>
-      </mat-grid-list>
+        <button mat-raised-button color="primary" (click)="toggle()" style="margin-left: 40%;" title="Click para ver la clasificación">
+                            
+            <mat-icon>assistant</mat-icon> 
+        </button>
 
 
-</div>
-
-
-
-
-
-
-
-
+        <div class="caja"   [@aparecer]="stateName">
+            <ul><li *ngFor="let uno of tipoSust" >
+                {{uno}}  </li>
+        </ul>
+        </div>
 

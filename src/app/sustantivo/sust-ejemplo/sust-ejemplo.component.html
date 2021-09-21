@@ -1,0 +1,53 @@
+
+<div class="detalle">
+    <p>Angular: tipos de botones de mat-button </p>
+  </div>
+  <div class="caja1">
+     
+</div>
+<div class="cartel" @entrada>
+<h4 >las respuestas positivas suman</h4>
+    <h4>las negativas restan</h4>
+</div>
+    <div class="mensaje">
+    <h3>puntaje {{contador}}</h3>
+  <p> tu respuesta es ....</p>
+     <p class="resultado">{{mensaje}} </p> 
+</div>
+
+  <section>
+    <div class="example-label">sustantivo común   </div>
+    <div class="example-button-row">
+        <button mat-raised-button color="primary"(click)=probar()  >auto</button>
+        <button mat-raised-button color="primary"(click)=mal() >Paris </button>
+        <button mat-raised-button color="primary"(click)=mal()>María</button>
+     
+    </div>
+  </section>
+  <section>
+    <div class="example-label"> sustantivo propio </div>
+    <div class="example-button-row">
+        <button mat-raised-button color="warn" (click)=probar() >Carla</button>
+        <button mat-raised-button color="warn"(click)=mal() >bandada </button>
+        <button mat-raised-button color="warn"(click)=probar() >Perú</button>
+      </div>
+  </section>
+  <section>
+    <div class="example-label">sustantivo colectivos   </div>
+    <div class="example-button-row">
+        <button mat-stroked-button="primary"(click)=mal() >computadora</button>
+        <button mat-stroked-button="primary"(click)=probar() >pinacoteca </button>
+        <button mat-stroked-button="primary"(click)=mal() >María</button>
+     
+    </div>
+  </section>
+
+  <section>
+    <div class="example-label">sustantivo gentilicios  </div>
+    <div class="example-button-row">
+        <button mat-flat-button color="accent"(click)=probar()>tucumano</button>
+        <button mat-flat-button color="accent"(click)=mal()>pinacoteca </button>
+        <button mat-flat-button color="accent" (click)=probar()>santiagueño</button>
+     
+    </div>
+  </section>

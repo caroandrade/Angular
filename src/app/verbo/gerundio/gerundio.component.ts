@@ -7,13 +7,16 @@ import { trigger, style, transition, animate, state } from '@angular/animations'
   styleUrls: ['./gerundio.component.scss'],
   animations:[ trigger('entrada',[
     state('void', style({
-      transform: 'translateX(-300%)',
+      transform: 'translateX(-500%)',
+      
+
       opacity: 0
     })),
 
     transition(":enter", [
-      animate(300, style({
-        transform: 'translateX(0%)',
+      animate(800, style({
+        transform: 'translateX(50%)',
+        
         opacity: 1
 
       })),
